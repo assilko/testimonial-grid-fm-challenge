@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #EBEFF2;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+
+#testimonials-container {
+    padding: 5% 3%;
+}
+
+.grid-i {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 25px 32px -9px rgba(0,0,0,0.17);
+    font-size: 13px;
+}
+
+#testimonial-1 {
+    background-color: #683FBF;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+}
+
+#testimonial-2 {
+    background-color: #4F5F73;
+    color: #ffffff;
+
+}
+
+#testimonial-3, #testimonial-5 {
+    background-color: #ffffff;
+    color: #727983;
+    
+    
+}
+
+#testimonial-4 {
+    background-color: #151C26;
+    color: #ffffff;
+
+}
+
+#testimonial-5 {
+    position: relative;
+}
+
+#testimonial-5, .p-5 {
+    z-index: 3;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    z-index: 3;
+    position: relative;
+}
+.header img {
+    border-radius: 50%;
+    margin-right: 22px;
+}
+
+#testimonial-1 .header img, #testimonial-4 .header img {
+    border: 3px solid #9E77F2;
+}
+
+
+.header .name {
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+.grid-i h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600px;
+}
+.grid-i p {
+    opacity: 70%;
+}
+
+#quote {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    z-index: -1;
+    opacity: 50%;
+}
+
+#end-quote {
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 30%
+}
+
+.attribution {
+    position: absolute;
+    right: 15px;
+    font-size: 0.8rem;
+    background-color: #8097A6;
+    padding: 10px;
+    border-radius: 5px;
+    color: #1D2326;
+    box-shadow: 1px 2px 5px 1px rgba(255,255,255, 0.2);
+  }
+
+
+@media (min-width: 576px) {
+
+   #testimonials-container, #main-left, #top, #bottom {
+    display: flex;
+   }
+
+   #testimonials-container {
+    max-width: 1440px;
+    margin: 0 auto;
+   }
+   #testimonial-5 {
+    flex-basis: 20%;
+    
+   }
+
+   #main-left {
+    flex-direction: column;
+    flex-basis: 80%;
+    
+   }
+
+   #main-left, .grid-i {
+    margin-right: 10px;
+   }
+
+
+   #top, #bottom {
+    flex-basis: 50%;
+    
+   }
+
+
+ #testimonial-1, #testimonial-4 {
+    flex-basis: 60%;
+ }
+ 
+ #testimonial-2, #testimonial-3 {
+    flex-basis: 40%;
+ 
+ }
+
+ .attribution {
+    right: 45px;
+ }
+ 
+
+}
+
+
+
